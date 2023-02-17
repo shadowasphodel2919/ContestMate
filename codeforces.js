@@ -22,7 +22,7 @@ export function codeforcesContests(element) {
                 <tr>
                         <td>${val.result[i].id}</td>
                         <td>${val.result[i].name}</td>
-                        <td>${obj}</td>
+                        <td>${formatTS(obj)}</td>
                         <td>${new Date(val.result[i].durationSeconds*1000)}</td>
                 </tr>
                 `
@@ -32,4 +32,8 @@ export function codeforcesContests(element) {
         element.innerHTML = "<table>"+rows+"</table>"
     })
   }
+
+function formatTS(timestamp){
+   return timestamp.toLocaleDateString()+" "+timestamp.toLocaleTimeString()
+}
   
