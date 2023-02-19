@@ -22,7 +22,7 @@ export function codeforcesContests(element) {
                         <td>${val.result[i].id}</td>
                         <td>${val.result[i].name}</td>
                         <td>${formatTS(obj)}</td>
-                        <td>${new Date(val.result[i].durationSeconds*1000)}</td>
+                        <td>${(val.result[i].durationSeconds/60)} mins</td>
                 </tr>
                 `
                 rows = rows+row
