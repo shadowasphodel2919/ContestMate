@@ -17,7 +17,6 @@ export function codeforcesContests(element) {
         for(let i = 0; i < length; i++){
             if(val.result[i].phase=="BEFORE"){
                 var obj = new Date(val.result[i].startTimeSeconds*1000);
-                console.log(obj);
                 var row = `
                 <tr>
                         <td>${val.result[i].id}</td>

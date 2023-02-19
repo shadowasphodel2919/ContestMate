@@ -18,7 +18,7 @@ export function codechefContests(element) {
         <tr>
                 <td>${present_contests[i]["contest_code"]}</td>
                 <td>${present_contests[i]["contest_name"]}</td>
-                <td>${present_contests[i]["contest_start_date"]}</td>
+                <td>${formatTS(present_contests[i]["contest_start_date"])}</td>
                 <td>${present_contests[i]["contest_end_date"]}</td>
                 <td>${present_contests[i]["contest_duration"]}</td>
         </tr>
@@ -28,4 +28,8 @@ export function codechefContests(element) {
     element.innerHTML = "<table>"+rows+"</table>"
     })
   }
+
+  function formatTS(timestamp){
+    return timestamp
+}
   

@@ -17,7 +17,6 @@ export function leetcodeContests(element) {
         let length = data.length
         for(let i = 0; i < length; i++){
             var obj = new Date(data[i].startTime*1000);
-            console.log(obj);
             if(obj>Date.now()){
                 var row = `
                     <tr>
