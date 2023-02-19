@@ -7,14 +7,29 @@
     <title>Static</title>
   </head>
   <body>
+    <div class="scrollTracker"></div>
     <div id="app">
       <h1>ContestMate</h1>
-      <h1>Codechef Contests</h1>
-      <div class="contest_codechef contest"></div>
-      <h1>Codeforces Contests</h1>
-      <div class="contest_codeforces contest"></div>
-      <h1>LeetCode Contests</h1>
-      <div class="contest_leetcode contest"></div>
+      <div class="tab">
+        <a href="#codechef">CodeChef</a>
+        <a href="#codeforces">CodeForces</a>
+        <a href="#leetcode">LeetCode</a>
+      </div>
+      <section class="even">
+        <h1 id="codechef">Codechef Contests</h1>
+        <div class="contest_codechef contest"></div> 
+      </section>
+      
+      <section class="odd">
+        <h1 id="codeforces">Codeforces Contests</h1>
+        <div class="contest_codeforces contest"></div>
+      </section>
+      
+      <section class="even">
+        <h1 id="leetcode">LeetCode Contests</h1>
+        <div class="contest_leetcode contest"></div>
+      </section>
+      
     </div>
     <script type="module" src="/main.js"></script>
   </body>

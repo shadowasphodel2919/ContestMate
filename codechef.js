@@ -20,7 +20,7 @@ export function codechefContests(element) {
                 <td>${present_contests[i]["contest_name"]}</td>
                 <td>${formatTS(present_contests[i]["contest_start_date"])}</td>
                 <td>${present_contests[i]["contest_end_date"]}</td>
-                <td>${present_contests[i]["contest_duration"]}</td>
+                <td>${present_contests[i]["contest_duration"]} mins</td>
         </tr>
         `
         rows = rows+row
