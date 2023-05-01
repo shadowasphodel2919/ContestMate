@@ -11,7 +11,7 @@ app.use(cors())
 app.use('/codechef', (req, res)=>{
     axios.get(CODECHEF_URL)
     .then(response=>{
-        console.log(response.data);
+        // console.log(response.data);
         res.send(response.data)
     })
     .catch(err=>{
@@ -22,7 +22,7 @@ app.use('/codechef', (req, res)=>{
 app.use('/leetcode', (req, res)=>{
     axios.get(LEETCODE_URL)
     .then(response=>{
-        console.log(response.data);
+        // console.log(response.data);
         res.send(response.data)
     })
     .catch(err=>{
