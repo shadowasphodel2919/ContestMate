@@ -1,6 +1,6 @@
 export function codechefContests(element) {
     // codechef url
-    const CODECHEF_URL = 'http://localhost:3600/codechef'
+    const CODECHEF_URL = 'https://contestmate-api.onrender.com/codechef'
     async function fetchCodechefContests(){
     const response = await fetch(CODECHEF_URL);
     // var data = await response.json();

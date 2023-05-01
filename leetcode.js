@@ -1,6 +1,6 @@
 export function leetcodeContests(element) {
     // codechef url
-    const LEETCODE_URL = 'http://localhost:3600/leetcode'
+    const LEETCODE_URL = 'https://contestmate-api.onrender.com/leetcode'
     async function fetchLeetcodeContests(){
         const response = await fetch(LEETCODE_URL);
         return response.json();
