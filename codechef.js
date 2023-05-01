@@ -1,8 +1,10 @@
 export function codechefContests(element) {
     // codechef url
-    const CODECHEF_URL = 'https://www.codechef.com/api/list/contests/all'
+    const CODECHEF_URL = 'http://localhost:3600/codechef'
     async function fetchCodechefContests(){
     const response = await fetch(CODECHEF_URL);
+    // var data = await response.json();
+    // console.log(data);
     return response.json();
     }
     const codechef_contests = Promise.resolve(fetchCodechefContests());

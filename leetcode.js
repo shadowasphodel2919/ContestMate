@@ -1,6 +1,6 @@
 export function leetcodeContests(element) {
     // codechef url
-    const LEETCODE_URL = 'https://leetcode.com/graphql?query={%20allContests%20{%20title%20titleSlug%20startTime%20duration%20__typename%20}%20}'
+    const LEETCODE_URL = 'http://localhost:3600/leetcode'
     async function fetchLeetcodeContests(){
         const response = await fetch(LEETCODE_URL);
         return response.json();
